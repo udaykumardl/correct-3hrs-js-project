@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sellers Admin Page</title>
+
+</head>
+<body>
+  <h1>Sellers Admin Page</h1>
+  <div class="container">
+    <form action="#" onsubmit="handleFormSubmit(event)">
+        <label for="productname">Product Name:</label>
+        <input type="text" id="productname" required>
+
+        <label for="sellingprice">Selling Price:</label>
+        <input type="number" id="sellingprice" required>
+
+        <label for="category">Category:</label>
+        <select class="form-select" id="category">
+            <option>select</option>
+            <option>Electronics</option>
+            <option>skincare</option>
+            <option>Food</option>
+        </select>
+
+        <button type="submit">Add Product</button> <!-- Corrected: Added type="submit" -->
+    </form>
+  </div>
+
+  <ul id="productlist"></ul>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+  <script src="index.js"></script>
+
+  
+</body>
+</html>
